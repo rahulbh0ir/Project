@@ -391,15 +391,17 @@
   <script>
 
     const boxes = document.querySelectorAll(".box");
-    let show = document.getElementsByClassName("options")
+    let show = document.getElementsByClassName("options");
+    let check = document.getElementsByTagName("input")
     let active = null
 
     boxes.forEach(box => {
       box.addEventListener('click', function () {
-
+        
         let i = 0
         while (i <= 2) {
           show[i].style.display = "none";
+          check[i].checked = false
           i++;
         }
 
@@ -409,7 +411,8 @@
         let b = Number(active.id)
 
         if (active) {
-          show[b].style.display = "block"
+          show[b].style.display = "block";
+          check[b].checked = true;
         }
 
       });
