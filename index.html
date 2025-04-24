@@ -4,12 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://fav.farm/🍥">
   <title>It's BOGO</title>
   <style>
     body {
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .heading {
+      margin-top: 10%;
+      text-align: center;
+      position: relative;
+    }
+
+    .line {
+      border-top: 2px solid lightgray;
+      position: absolute;
+      top: 19px;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    h1 {
+      margin: auto;
+      text-align: center;
+      width: max-content;
+      background-color: white;
+      z-index: 1;
+      color: #FF6B82;
     }
 
     .container {
@@ -121,6 +147,22 @@
       width: 400px;
 
     }
+
+    .pumper {
+      font-style: italic;
+      color: gray;
+    }
+
+    .cost {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .cost p {
+      color: #FF6B82;
+    }
   </style>
 
 </head>
@@ -133,8 +175,8 @@
     <form>
 
       <div class="heading">
-        <hr>
         <h1>YAY! It's BOGO</h1>
+        <div class="line"></div>
       </div>
 
 
@@ -146,8 +188,8 @@
         <div class="box" id="0"> <!-- -----------------box 1--------------------- -->
           <div class="info">
             <div class="div1">
-              <input type="radio">
-              <h4>1 Unit</h4>
+              <input type="radio" id="1unit">
+              <label for="1unit">1 Unit</label>
               <p>10% OFF</p>
             </div>
             <div class="div2">
@@ -206,8 +248,8 @@
 
           <div class="info">
             <div class="div1">
-              <input type="radio">
-              <h4>2 Unit</h4>
+              <input type="radio" id="2unit">
+              <label for="2unit">2 Unit</label>
               <p>20% OFF</p>
             </div>
             <div class="div2">
@@ -267,8 +309,8 @@
         <div class="box" id="2"> <!-- -----------------Box 3--------------------- -->
           <div class="info">
             <div class="div1">
-              <input type="radio">
-              <h4>3 Unit</h4>
+              <input type="radio" id="3unit">
+              <label for="3unit">3 Unit</label>
               <p>30% OFF</p>
             </div>
             <div class="div2">
@@ -330,9 +372,9 @@
       <!-- ----------BOTTOM------------   -->
 
       <div class="payment">
-        <div class="info">
+        <div class="cost">
           <p>Free Delivery</p>
-          <h2>Total : $ 18.00 USD</h2>
+          <h3>Total : $ 18.00 USD</h3>
         </div>
         <div class="btn">
           <button>+ Add to Cart</button>
