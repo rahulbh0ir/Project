@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>It's BOGO</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      border: 1px solid lightgrey;
+      width: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box {
+      margin: 30px 0px;
+      padding: 20px;
+      border: 2px solid lightgrey;
+    }
+
+
+    .box.active {
+      border: 5px solid #FF6B82;
+      background-color: #FF6B8110;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -9%;
+      margin-left: 60%;
+      border-radius: 5px;
+      background-color: #FF6B82;
+      width: 160px;
+      height: 30px;
+      color: white;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    .div1 {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .div1 p {
+      padding: 1px 7px;
+      color: white;
+      background-color: #FF6B82;
+    }
+
+    .div2 {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .div2 p {
+      margin-top: -20px;
+      text-decoration: line-through;
+    }
+
+    .pumper {
+      margin-top: 2px;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    button {
+      color: white;
+      background-color: #FF6B82;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      height: 50px;
+      width: 100%;
+    }
+
+    .options {
+      cursor: pointer;
+      display: none;
+      flex-direction: column;
+      margin-left: 30px
+    }
+
+    select {
+      width: 100px;
+      height: 30px;
+    }
+
+    .option {
+      gap: 10px;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .value p {
+      margin-top: -25px;
+      margin-bottom: 4px;
+    }
+
+    .payment {
+      padding: 20px;
+      width: 400px;
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- -------------------------TOP----------------------- -->
+
+  <div class="container">
+    <form>
+
+      <div class="heading">
+        <hr>
+        <h1>YAY! It's BOGO</h1>
+      </div>
+
+
+
+      <!-- -----------------MID--------------------- -->
+
+      <div class="boxes">
+
+        <div class="box" id="0"> <!-- -----------------box 1--------------------- -->
+          <div class="info">
+            <div class="div1">
+              <input type="radio">
+              <h4>1 Unit</h4>
+              <p>10% OFF</p>
+            </div>
+            <div class="div2">
+              <h2>$10.00 USD</h2>
+              <p>$24.00 USD</p>
+            </div>
+          </div>
+
+          <div class="options">
+
+            <div class="option">
+              <p>#1</p>
+              <div class="value">
+                <p>Size</p>
+                <select name="size" id="size">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+
+              <div class="value">
+                <p>Colour</p>
+                <select name="color" id="color">
+                  <option value="Black">Black</option>
+                  <option value="Red">Red</option>
+                  <option value="Green">Green</option>
+                </select>
+              </div>
+            </div>
+            <div class="option">
+              <p>#2</p>
+              <div>
+                <select name="size" id="size">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+
+              <div>
+                <select name="color" id="color">
+                  <option value="Black">Black</option>
+                  <option value="Red">Red</option>
+                  <option value="Green">Green</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="box" id="1"> <!-- -----------------Box 2--------------------- -->
+          <div class="title">MOST POPULAR</div>
+
+          <div class="info">
+            <div class="div1">
+              <input type="radio">
+              <h4>2 Unit</h4>
+              <p>20% OFF</p>
+            </div>
+            <div class="div2">
+              <h2>$18.00 USD</h2>
+              <p>$24.00 USD</p>
+            </div>
+          </div>
+
+          <div class="options">
+
+            <div class="option">
+              <p>#1</p>
+              <div class="value">
+                <p>Size</p>
+                <select name="size" id="size">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+
+              <div class="value">
+                <p>Colour</p>
+                <select name="color" id="color">
+                  <option value="Black">Black</option>
+                  <option value="Red">Red</option>
+                  <option value="Green">Green</option>
+                </select>
+              </div>
+            </div>
+            <div class="option">
+              <p>#2</p>
+              <div>
+                <select name="size" id="size">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+
+              <div>
+                <select name="color" id="color">
+                  <option value="Black">Black</option>
+                  <option value="Red">Red</option>
+                  <option value="Green">Green</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+
+
+        <div class="box" id="2"> <!-- -----------------Box 3--------------------- -->
+          <div class="info">
+            <div class="div1">
+              <input type="radio">
+              <h4>3 Unit</h4>
+              <p>30% OFF</p>
+            </div>
+            <div class="div2">
+              <h2>$24.00 USD</h2>
+              <p>$24.00 USD</p>
+            </div>
+          </div>
+
+          <div class="options">
+
+            <div class="option">
+              <p>#1</p>
+              <div class="value">
+                <p>Size</p>
+                <select name="size" id="size">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+
+              <div class="value">
+                <p>Colour</p>
+                <select name="color" id="color">
+                  <option value="Black">Black</option>
+                  <option value="Red">Red</option>
+                  <option value="Green">Green</option>
+                </select>
+              </div>
+            </div>
+            <div class="option">
+              <p>#2</p>
+              <div>
+                <select name="size" id="size">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+                </select>
+              </div>
+
+              <div>
+                <select name="color" id="color">
+                  <option value="Black">Black</option>
+                  <option value="Red">Red</option>
+                  <option value="Green">Green</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+
+
+      <!-- ----------BOTTOM------------   -->
+
+      <div class="payment">
+        <div class="info">
+          <p>Free Delivery</p>
+          <h2>Total : $ 18.00 USD</h2>
+        </div>
+        <div class="btn">
+          <button>+ Add to Cart</button>
+          <p class="pumper">@ Powered by Pumper</p>
+        </div>
+      </div>
+
+
+    </form>
+  </div>
+
+
+
+  <script>
+
+    const boxes = document.querySelectorAll(".box");
+    let show = document.getElementsByClassName("options")
+    let active = null
+
+    boxes.forEach(box => {
+      box.addEventListener('click', function () {
+
+        let i = 0
+        while (i <= 2) {
+          show[i].style.display = "none";
+          i++;
+        }
+
+        boxes.forEach(b => b.classList.remove("active"));
+        this.classList.add('active');
+        active = this
+        let b = Number(active.id)
+
+        if (active) {
+          show[b].style.display = "block"
+        }
+
+      });
+    });
+
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>
