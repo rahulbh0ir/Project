@@ -169,8 +169,6 @@
 
 <body>
 
-  <!-- -------------------------TOP----------------------- -->
-
   <div class="container">
     <form>
 
@@ -179,13 +177,9 @@
         <div class="line"></div>
       </div>
 
-
-
-      <!-- -----------------MID--------------------- -->
-
       <div class="boxes">
 
-        <div class="box" id="0"> <!-- -----------------box 1--------------------- -->
+        <div class="box" id="0">
           <div class="info">
             <div class="div1">
               <input type="radio" id="1unit">
@@ -243,7 +237,7 @@
         </div>
 
 
-        <div class="box" id="1"> <!-- -----------------Box 2--------------------- -->
+        <div class="box" id="1">
           <div class="title">MOST POPULAR</div>
 
           <div class="info">
@@ -300,13 +294,9 @@
             </div>
           </div>
 
-
         </div>
 
-
-
-
-        <div class="box" id="2"> <!-- -----------------Box 3--------------------- -->
+        <div class="box" id="2">
           <div class="info">
             <div class="div1">
               <input type="radio" id="3unit">
@@ -362,14 +352,7 @@
           </div>
         </div>
 
-
-
-
-
       </div>
-
-
-      <!-- ----------BOTTOM------------   -->
 
       <div class="payment">
         <div class="cost">
@@ -386,8 +369,6 @@
     </form>
   </div>
 
-
-
   <script>
 
     const boxes = document.querySelectorAll(".box");
@@ -397,7 +378,7 @@
 
     boxes.forEach(box => {
       box.addEventListener('click', function () {
-        
+
         let i = 0
         while (i <= 2) {
           show[i].style.display = "none";
@@ -420,10 +401,6 @@
 
 
   </script>
-
-
-
-
 
 </body>
 
